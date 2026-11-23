@@ -151,8 +151,6 @@ GALERIA = [
         ("w12_quinceanera", "quince", "Quinceañera con corona dorada y ojos ahumados suaves"),
     ("w15_quinceanera", "quince", "Quinceañera con tiara y labios nude"),
     ("w0_quinceanera", "quince", "Look juvenil con delineado y ondas"),
-    ("w4_quinceanera", "quince", "Quinceañera con sombras lila y verde"),
-    ("w6_quinceanera", "quince", "Ojos lila con brillo para quinceañera"),
         ("video_glam_social", "social", "Maquillaje glam social con delineado"),
     ("w9_social", "social", "Maquillaje social con sombras cobre"),
     ("w7_social", "social", "Maquillaje social para mamá con labios rojos"),
@@ -366,7 +364,7 @@ page = f'''<!DOCTYPE html>
 
 <section class="about">
   <div class="wrap about-in">
-    <div class="about-mark"><img class="avatar" src="logos/B_avatar_rosa.svg" alt="" width="600" height="600" loading="lazy"></div>
+    <div class="about-photo arch"><img src="img/w4_quinceanera.jpg" alt="Julieth Suárez, maquilladora profesional" width="600" height="800" loading="lazy"></div>
     <div>
       <p class="eyebrow">Bienvenida</p>
       <h2>Hola, soy Julieth</h2>
@@ -453,7 +451,7 @@ page = f'''<!DOCTYPE html>
     <header class="sec-head"><p class="eyebrow">Catálogos 2026</p><h2>Llévate el catálogo completo</h2><p>Descárgalo en PDF para revisarlo con calma o compartirlo con tu familia.</p></header>
     <div class="cat-grid">
       <a class="cat" href="catalogos/novias-2026.pdf" download><img src="img/w5_novia.jpg" alt="" loading="lazy" width="300" height="400"><span><strong>Novias 2026</strong><small>PDF · 10 páginas</small></span></a>
-      <a class="cat" href="catalogos/quinceaneras-2026.pdf" download><img src="img/w0_quinceanera.jpg" alt="" loading="lazy" width="300" height="400"><span><strong>Quinceañeras 2026</strong><small>PDF · 10 páginas</small></span></a>
+      <a class="cat" href="catalogos/quinceaneras-2026.pdf" download><img src="img/w12_quinceanera.jpg" alt="" loading="lazy" width="300" height="400"><span><strong>Quinceañeras 2026</strong><small>PDF · 10 páginas</small></span></a>
       <a class="cat" href="catalogos/social-2026.pdf" download><img src="img/w9_social.jpg" alt="" loading="lazy" width="300" height="400"><span><strong>Maquillaje social 2026</strong><small>PDF · 6 páginas</small></span></a>
     </div>
   </div>

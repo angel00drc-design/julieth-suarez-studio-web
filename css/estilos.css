@@ -311,3 +311,6 @@ table{border-collapse:collapse;width:100%}
 .svc-grid>*,.pkg-grid>*,.cat-grid>*,.extras-grid>*,.pol-grid>*{min-width:0}
 .svc-title{overflow-wrap:break-word;hyphens:auto}
 @media (max-width:380px){.cat{grid-template-columns:80px minmax(0,1fr)}.cat strong{font-size:1.15rem}}
+.about-in{grid-template-columns:minmax(0,300px) minmax(0,1fr)}
+.about-photo{width:100%;margin:0 auto}
+@media (max-width:900px){.about-photo{width:min(240px,70%)}}
