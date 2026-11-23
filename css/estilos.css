@@ -292,3 +292,22 @@ table{border-collapse:collapse;width:100%}
   .svc-price{font-size:.66rem;letter-spacing:.14em}
   h2{letter-spacing:.05em}
 }
+
+/* Ajustes para pantallas medianas (paneles laterales, tablets y portátiles pequeños) */
+@media (max-width:1180px){
+  .menu-btn{display:block}
+  .menu{position:fixed;inset:76px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--marfil);border-bottom:1px solid var(--linea);padding:10px 4vw 20px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:.25s}
+  .menu.is-open{transform:none;opacity:1;visibility:visible}
+  .menu a:not(.btn){padding:.9em 0;border-bottom:1px solid var(--linea)}
+  .menu .btn{margin-top:14px}
+  .menu-btn[aria-expanded=true] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  .menu-btn[aria-expanded=true] span:nth-child(2){opacity:0}
+  .menu-btn[aria-expanded=true] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+}
+@media (max-width:1100px){
+  .svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+.cat-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.svc-grid>*,.pkg-grid>*,.cat-grid>*,.extras-grid>*,.pol-grid>*{min-width:0}
+.svc-title{overflow-wrap:break-word;hyphens:auto}
+@media (max-width:380px){.cat{grid-template-columns:80px minmax(0,1fr)}.cat strong{font-size:1.15rem}}
