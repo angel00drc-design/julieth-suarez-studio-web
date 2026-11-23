@@ -172,7 +172,7 @@ FAQ = [
     ("¿Qué diferencia hay entre la línea Nacional y la Deluxe?",
      "La Nacional usa productos nacionales de alta calidad y la Deluxe, productos importados de gama deluxe. Lo que incluye cada paquete es igual en las dos líneas; la Deluxe cuesta cerca de un 30 % más."),
     ("¿Van a domicilio? ¿Cuánto cuesta?",
-     "Sí, voy hasta donde te arregles. El domicilio cuesta $20.000 en el casco urbano y $40.000 en la zona cercana. Si tu servicio empieza de madrugada y tiene recargo, te lo confirmo por escrito antes de que pagues el anticipo."),
+     "Sí, voy hasta donde te arregles. El domicilio cuesta $20.000 en el casco urbano de Bucaramanga y $40.000 en la zona cercana. Si tu servicio empieza de madrugada y tiene recargo, te lo confirmo por escrito antes de que pagues el anticipo."),
     ("¿Puedo cambiar la fecha de mi boda o de mis quince?",
      "Sí. Cambiar la fecha no es cancelar: con aviso oportuno, tu anticipo pasa completo a la nueva fecha, sujeto a disponibilidad."),
     ("¿Qué pasa si cancelo?",
@@ -295,9 +295,9 @@ LOGO_LIGHT = '<img class="logo" src="logos/B_monograma_claro.svg" alt="Julieth S
 
 jsonld = {
     "@context": "https://schema.org", "@type": "BeautySalon",
-    "name": "Julieth Suárez Studio", "description": "Maquillaje profesional para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Servicio a domicilio.",
+    "name": "Julieth Suárez Studio", "description": "Maquillaje profesional en Bucaramanga para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Servicio a domicilio.",
     "telephone": "+57 310 812 8227", "sameAs": [IG], "priceRange": "$90.000 - $1.250.000 COP",
-    "areaServed": "Colombia", "currenciesAccepted": "COP",
+    "areaServed": "Bucaramanga", "address": {"@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
     "paymentAccepted": "Efectivo, transferencia bancaria, Nequi, Daviplata, Bre-B, tarjeta de crédito o débito",
 }
 
@@ -308,8 +308,8 @@ page = f'''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Julieth Suárez Studio · Maquillaje profesional para novias, quinceañeras y eventos</title>
-<meta name="description" content="Maquillaje profesional con aerógrafo y acabado de larga duración para novias, quinceañeras y eventos sociales. Precios 2026, catálogos, galería y agenda por WhatsApp. Servicio a domicilio.">
+<title>Julieth Suárez Studio · Maquillaje profesional en Bucaramanga</title>
+<meta name="description" content="Maquillaje profesional en Bucaramanga para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Precios 2026, catálogos, galería y agenda por WhatsApp. Servicio a domicilio.">
 <meta name="theme-color" content="#FBF5F1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Julieth Suárez Studio · Makeup">
@@ -345,10 +345,10 @@ page = f'''<!DOCTYPE html>
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-text">
-      <p class="eyebrow">Maquillaje profesional · Colombia</p>
+      <p class="eyebrow">Maquillaje profesional · Bucaramanga</p>
       <h1>Novias, quinceañeras y eventos que se recuerdan</h1>
       <p class="script">Tu belleza, mi propósito.</p>
-      <p class="lead">Maquillaje con aerógrafo y acabado de larga duración, hecho a la medida de tu piel y de tu estilo. Voy hasta donde te arregles.</p>
+      <p class="lead">Maquillaje con aerógrafo y acabado de larga duración, hecho a la medida de tu piel y de tu estilo. Voy hasta donde te arregles en Bucaramanga.</p>
       <div class="cta-row">
         <a class="btn" href="#agenda">Agendar mi fecha</a>
         <a class="btn btn-ghost" href="#servicios">Ver servicios y precios</a>
@@ -504,7 +504,7 @@ page = f'''<!DOCTYPE html>
       <ul class="contact-list">
         <li><span>WhatsApp</span><a href="{wa_general}" target="_blank" rel="noopener">310 812 8227</a></li>
         <li><span>Instagram</span><a href="{IG}" target="_blank" rel="noopener">@julieth5suarez</a></li>
-        <li><span>Servicio</span>A domicilio</li>
+        <li><span>Servicio</span>A domicilio en Bucaramanga</li>
       </ul>
       <p class="script script-sm">Tu belleza, mi propósito.</p>
     </div>
@@ -553,7 +553,7 @@ page = f'''<!DOCTYPE html>
     <details class="datos" id="datos"><summary>Política de tratamiento de datos personales</summary>
       <p>Julieth Suárez Studio trata los datos que nos entregas (nombre, teléfono, fecha y lugar del evento, y la información de piel que decidas compartir) solo para responder tu solicitud, cotizar, agendar y prestar el servicio, conforme a la Ley 1581 de 2012 y sus decretos reglamentarios. La información sobre salud y alergias es opcional y se trata como dato sensible. Las fotos solo se publican con tu autorización escrita, que puedes retirar cuando quieras. Puedes conocer, actualizar, rectificar o pedir que eliminemos tus datos escribiendo al WhatsApp 310 812 8227. En el caso de menores de edad, los datos los entrega y autoriza su acudiente.</p>
     </details>
-    <p class="copy">© 2026 Julieth Suárez Studio · Maquillaje profesional</p>
+    <p class="copy">© 2026 Julieth Suárez Studio · Maquillaje profesional en Bucaramanga</p>
   </div>
 </footer>
 
