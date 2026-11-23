@@ -172,7 +172,7 @@ FAQ = [
     ("¿Qué diferencia hay entre la línea Nacional y la Deluxe?",
      "La Nacional usa productos nacionales de alta calidad y la Deluxe, productos importados de gama deluxe. Lo que incluye cada paquete es igual en las dos líneas; la Deluxe cuesta cerca de un 30 % más."),
     ("¿Van a domicilio? ¿Cuánto cuesta?",
-     "Sí, voy hasta donde te arregles. El domicilio cuesta $20.000 en el casco urbano de Bucaramanga y $40.000 en la zona cercana. Si tu servicio empieza de madrugada y tiene recargo, te lo confirmo por escrito antes de que pagues el anticipo."),
+     "Sí, voy hasta donde te arregles. El domicilio cuesta $20.000 en Bucaramanga y $40.000 en el área metropolitana (Floridablanca, Girón y Piedecuesta). Para otros municipios te envío la cotización. Si tu servicio empieza de madrugada y tiene recargo, te lo confirmo por escrito antes de que pagues el anticipo."),
     ("¿Puedo cambiar la fecha de mi boda o de mis quince?",
      "Sí. Cambiar la fecha no es cancelar: con aviso oportuno, tu anticipo pasa completo a la nueva fecha, sujeto a disponibilidad."),
     ("¿Qué pasa si cancelo?",
@@ -234,7 +234,7 @@ def compare_table(rows, names, prices_n, prices_d, caption):
     body += "<tr class='row-price'><th scope='row'>Línea Deluxe</th>" + "".join(f"<td>{p}</td>" for p in prices_d) + "</tr>"
     return f'''<details class="compare"><summary>Comparar los paquetes en una tabla</summary>
 <div class="table-wrap"><table><caption class="sr-only">{e(caption)}</caption><thead><tr><th></th>{head}</tr></thead><tbody>{body}</tbody></table></div>
-<p class="fine">Precios en pesos colombianos por persona. Domicilio: $20.000 en el casco urbano y $40.000 en la zona cercana.</p></details>'''
+<p class="fine">Precios en pesos colombianos por persona. Domicilio: $20.000 en Bucaramanga y $40.000 en Floridablanca, Girón y Piedecuesta; otros municipios se cotizan aparte.</p></details>'''
 
 def social_card(s):
     items = "".join(f"<li>{CHECK}<span>{e(i)}</span></li>" for i in s["items"])
@@ -297,7 +297,7 @@ jsonld = {
     "@context": "https://schema.org", "@type": "BeautySalon",
     "name": "Julieth Suárez Studio", "description": "Maquillaje profesional en Bucaramanga para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Servicio a domicilio.",
     "telephone": "+57 310 812 8227", "sameAs": [IG], "priceRange": "$90.000 - $1.250.000 COP",
-    "areaServed": "Bucaramanga", "address": {"@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
+    "areaServed": ["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"], "address": {"@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
     "paymentAccepted": "Efectivo, transferencia bancaria, Nequi, Daviplata, Bre-B, tarjeta de crédito o débito",
 }
 
@@ -480,7 +480,7 @@ page = f'''<!DOCTYPE html>
       <div class="pol"><h3>Cancelación</h3><p>El anticipo de novias y quinceañeras no es reembolsable; con aviso de 20 días o más queda como saldo a favor. En social, con menos de 24 horas la reserva no se devuelve.</p></div>
       <div class="pol"><h3>Derecho de retracto</h3><p>Si contrataste a distancia, tienes 5 días hábiles desde el pago para retractarte y te devolvemos el 100 %, si aún no recibiste parte del servicio.</p></div>
       <div class="pol"><h3>Tarifas congeladas</h3><p>Si pagas el anticipo en 2026 para un evento en 2027, el precio de tu paquete se mantiene.</p></div>
-      <div class="pol"><h3>Domicilio y madrugada</h3><p>$20.000 en el casco urbano y $40.000 en la zona cercana. El recargo de madrugada te lo confirmo antes del anticipo, nunca después.</p></div>
+      <div class="pol"><h3>Domicilio y madrugada</h3><p>$20.000 en Bucaramanga y $40.000 en Floridablanca, Girón y Piedecuesta. Otros municipios se cotizan aparte. El recargo de madrugada te lo confirmo antes del anticipo, nunca después.</p></div>
       <div class="pol"><h3>Medios de pago</h3><p>Transferencia, Nequi, Daviplata, Bre-B, tarjeta de crédito o débito, y efectivo en el estudio con recibo. Cada pago se confirma por escrito.</p></div>
       <div class="pol"><h3>Tu piel y tus fotos</h3><p>Productos con registro INVIMA y herramientas desinfectadas. Solo publicamos tus fotos con tu autorización escrita.</p></div>
     </div>
