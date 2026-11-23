@@ -294,7 +294,7 @@ LOGO_LIGHT = '<img class="logo" src="logos/B_monograma_claro.svg" alt="Julieth S
 jsonld = {
     "@context": "https://schema.org", "@type": "BeautySalon",
     "name": "Julieth Suárez Studio", "description": "Maquillaje profesional en Bucaramanga para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Servicio a domicilio.",
-    "telephone": "+57 310 812 8227", "sameAs": [IG], "priceRange": "$90.000 - $1.250.000 COP",
+    "url": "https://juliethsuarezmakeup.netlify.app/", "image": "https://juliethsuarezmakeup.netlify.app/img/og.jpg", "telephone": "+57 310 812 8227", "sameAs": [IG], "priceRange": "$90.000 - $1.250.000 COP",
     "areaServed": ["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"], "address": {"@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
     "paymentAccepted": "Efectivo, transferencia bancaria, Nequi, Daviplata, Bre-B, tarjeta de crédito o débito",
 }
@@ -312,7 +312,9 @@ page = f'''<!DOCTYPE html>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Julieth Suárez Studio · Makeup">
 <meta property="og:description" content="Novias, quinceañeras y maquillaje social. Tu belleza, mi propósito.">
-<meta property="og:image" content="img/og.jpg">
+<meta property="og:image" content="https://juliethsuarezmakeup.netlify.app/img/og.jpg">
+<meta property="og:url" content="https://juliethsuarezmakeup.netlify.app/">
+<link rel="canonical" href="https://juliethsuarezmakeup.netlify.app/">
 <link rel="icon" href="logos/B_avatar_rosa.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/Cormorant-Light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Jost-Light.woff2" as="font" type="font/woff2" crossorigin>
