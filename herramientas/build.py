@@ -295,7 +295,7 @@ jsonld = {
     "@context": "https://schema.org", "@type": "BeautySalon",
     "name": "Julieth Suárez Studio", "description": "Maquillaje profesional en Bucaramanga para novias, quinceañeras y eventos sociales, con aerógrafo y acabado de larga duración. Servicio a domicilio.",
     "url": "https://juliethsuarezmakeup.netlify.app/", "image": "https://juliethsuarezmakeup.netlify.app/img/og.jpg", "telephone": "+57 310 812 8227", "sameAs": [IG], "priceRange": "$90.000 - $1.250.000 COP",
-    "areaServed": ["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"], "address": {"@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
+    "areaServed": ["Bucaramanga", "Floridablanca", "Girón", "Piedecuesta"], "address": {"@type": "PostalAddress", "streetAddress": "Transversal 112 # 20-117, San Lorenzo Reserva", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO"}, "currenciesAccepted": "COP",
     "paymentAccepted": "Efectivo, transferencia bancaria, Nequi, Daviplata, Bre-B, tarjeta de crédito o débito",
 }
 
@@ -504,8 +504,10 @@ page = f'''<!DOCTYPE html>
       <ul class="contact-list">
         <li><span>WhatsApp</span><a href="{wa_general}" target="_blank" rel="noopener">310 812 8227</a></li>
         <li><span>Instagram</span><a href="{IG}" target="_blank" rel="noopener">@julieth5suarez</a></li>
-        <li><span>Servicio</span>A domicilio en Bucaramanga</li>
+        <li><span>Estudio</span><a href="https://www.google.com/maps/search/?api=1&amp;query=Transversal%20112%20%2320-117%2C%20San%20Lorenzo%20Reserva%2C%20Bucaramanga%2C%20Santander%2C%20Colombia" target="_blank" rel="noopener">Tv. 112 # 20-117, San Lorenzo Reserva, Bucaramanga</a></li>
+        <li><span>Servicio</span>En el estudio o a domicilio</li>
       </ul>
+      <div class="map"><iframe title="Ubicación del estudio en Google Maps" src="https://www.google.com/maps?q=Transversal%20112%20%2320-117%2C%20San%20Lorenzo%20Reserva%2C%20Bucaramanga%2C%20Santander%2C%20Colombia&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
       <p class="script script-sm">Tu belleza, mi propósito.</p>
     </div>
     <form class="book-form" id="book-form" novalidate>
@@ -547,6 +549,7 @@ page = f'''<!DOCTYPE html>
     <div class="footer-contact">
       <a href="{wa_general}" target="_blank" rel="noopener">WhatsApp 310 812 8227</a>
       <a href="{IG}" target="_blank" rel="noopener">Instagram @julieth5suarez</a>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Transversal%20112%20%2320-117%2C%20San%20Lorenzo%20Reserva%2C%20Bucaramanga%2C%20Santander%2C%20Colombia" target="_blank" rel="noopener">Tv. 112 # 20-117, San Lorenzo Reserva, Bucaramanga</a>
     </div>
   </div>
   <div class="wrap">
