@@ -311,7 +311,7 @@ table{border-collapse:collapse;width:100%}
 .svc-grid>*,.pkg-grid>*,.cat-grid>*,.extras-grid>*,.pol-grid>*{min-width:0}
 .svc-title{overflow-wrap:break-word;hyphens:auto}
 @media (max-width:380px){.cat{grid-template-columns:80px minmax(0,1fr)}.cat strong{font-size:1.15rem}}
-.about-in{grid-template-columns:minmax(0,300px) minmax(0,1fr)}
+@media (min-width:901px){.about-in{grid-template-columns:minmax(0,300px) minmax(0,1fr)}}
 .about-photo{width:100%;margin:0 auto}
 @media (max-width:900px){.about-photo{width:min(240px,70%)}}
 .map{border-radius:var(--r);overflow:hidden;border:1px solid var(--nude);margin:0 0 1.2em;aspect-ratio:4/3;background:var(--rosa-50)}
@@ -319,3 +319,9 @@ table{border-collapse:collapse;width:100%}
 .footer-contact a:last-child{text-transform:none;letter-spacing:.04em}
 .contact-list li{align-items:flex-start}
 .contact-list span{flex:none}
+@media (max-width:640px){
+  .eyebrow{letter-spacing:.2em}
+  h2{letter-spacing:.04em}
+  .btn{letter-spacing:.12em}
+  .trust{letter-spacing:.1em}
+}
